@@ -17,16 +17,21 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.yyf.tools.SizeOf;
 
 public class HttpClientGetPostTest {
+	private static Logger logger = LoggerFactory.getLogger(HttpClientGetPostTest.class);
 	
 	public static void main(String[] args) throws IOException {
 		//System.out.println(post("http://localhost:8080/test/helloWord.json", "aabbccddeeffgg"));
-		//System.out.println(get("http://www.baidu.com/"));
-		HttpPost httppost = new HttpPost("http://www.baidu.com/");
-		SizeOf.deepSizeOf(httppost);
+		
+		String GET_URL = "http://www.baidu.com/";
+		logger.info("开始Get网页： {}", GET_URL);
+		String content = HttpClientGetPostTest.get(GET_URL);
+		logger.info("获取网页内容： {}", content);
 	}
 	
 	
