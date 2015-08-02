@@ -1,9 +1,9 @@
-package com.yyf.web;
+package com.yyf.web.action;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class HelloWordAction implements Action{
+public class TestH2Action implements Action{
 
 	@Override
 	public Map<String, Object> execute(Map<String, Object> context) {

@@ -1,4 +1,4 @@
-package com.yyf.web;
+package com.yyf.web.action;
 
 import java.util.Map;
 

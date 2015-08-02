@@ -5,6 +5,9 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean name="helloWord" class="com.yyf.web.HelloWordAction"/>
+	<bean name="helloWord" class="com.yyf.web.action.HelloWordAction"/>
+	
+	<bean name="testH2" class="com.yyf.web.action.TestH2Action">
+	</bean>
 	
 </beans>

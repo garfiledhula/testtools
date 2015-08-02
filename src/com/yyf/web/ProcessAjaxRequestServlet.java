@@ -12,6 +12,10 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 import org.springframework.web.util.UrlPathHelper;
 import com.alibaba.fastjson.JSON;
+import com.yyf.web.action.Action;
+import com.yyf.web.utils.ApplicationContextUtils;
+import com.yyf.web.utils.HttpServletUtils;
+import com.yyf.web.utils.ReturnCodeUtils;
 
 /**
  * 不适用Spring的MVC，直接用Servlet进行解析
@@ -27,7 +31,6 @@ public class ProcessAjaxRequestServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response){
 		try {
 			String responseStr = processHttpRequest(request, response);
-			logger.info("输出结果：{}", responseStr);
 			response.getWriter().write(responseStr);
 		} catch (IOException e) {
 			logger.error("doGet异常", e);
@@ -38,7 +41,6 @@ public class ProcessAjaxRequestServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response){
 		try {
 			String responseStr = processHttpRequest(request, response);
-			
 			response.getWriter().write(responseStr);
 		} catch (IOException e) {
 			logger.error("doPost异常", e);

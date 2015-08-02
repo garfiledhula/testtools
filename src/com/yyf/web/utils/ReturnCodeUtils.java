@@ -1,4 +1,4 @@
-package com.yyf.web;
+package com.yyf.web.utils;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.yyf.web;
+package com.yyf.web.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

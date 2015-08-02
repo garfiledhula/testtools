@@ -1,8 +1,7 @@
-package com.yyf.ws;
+package com.yyf.ws.test;
 
 import java.net.URI;
 import javax.xml.ws.Endpoint;
-import com.yyf.ws.test.WSForTest;
 
 public class JavaWsStartup {
 	private static String URL_DEMO = "http://localhost:8888/ws/wsForTest";

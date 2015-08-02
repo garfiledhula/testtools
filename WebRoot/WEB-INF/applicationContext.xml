@@ -7,7 +7,7 @@
 	
 	<import resource="applicationContext-service.xml"/>
 	
-	<bean id="applicationContextUtils" class="com.yyf.web.ApplicationContextUtils">
+	<bean id="applicationContextUtils" class="com.yyf.web.utils.ApplicationContextUtils">
 	</bean>
 
 </beans>
